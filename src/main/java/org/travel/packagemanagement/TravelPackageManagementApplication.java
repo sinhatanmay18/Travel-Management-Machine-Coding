@@ -18,13 +18,22 @@ import org.travel.packagemanagement.util.TestData;
 
 public class TravelPackageManagementApplication {
   public static void main(String[] args) throws Exception {
+    
     /*
     Note: For this application there are following assumptions made.
     1) There are 3 types of passengers Standard, Gold , Premium.
     2) A passenger need to first subscribe to travel package in order to enroll in activity.
     3) Passenger can subscribe to package using subscribeToPackage method and then enroll in activity using enrollInActivity.
     4) One can use methods present in TravelPackageService.java and Passenger.java class to print details.
-    5) Use README.md to read other details.
+    5) Added additional fields in model classes to facilitate certain functionalities:
+        a. Activity.java :
+            I. 'assignedToDestination' is used to identify the Destination to which Activity is assigned to.
+            II. 'isAssignedToAnyDestination' is used to identify if an Activity already belongs to a Destination. If set then Activity cannot be other Destination.
+
+        b. Destination.java :
+            I. 'PackageName' : is used to identify the Travel Package to which Destination is assigned to.
+
+     6) For further information, refer to README.md.
      */
 
 

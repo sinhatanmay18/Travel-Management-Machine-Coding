@@ -20,6 +20,30 @@ The system provides a robust platform where travel packages can be created and m
 
 ![HLD - Travel Management](https://github.com/sinhatanmay18/Travel-Management-Machine-Coding/assets/76418883/e1ece378-5bcf-4895-b206-27fd6c9ec5e6)
 
+## 1. Service Layer:
+
+#### a. Travel Package Service: Manages operations related to travel packages, such as creation, updates, and querying of packages.
+#### b. Destination Service: Handles the logistics of destinations within travel packages, including adding destinations, and managing activities available at each destination.
+#### c. Activity Service: Responsible for the activities within each destination, including enrollment of passengers, capacity checks, and activity detail management.
+
+## 2. Repository Layer
+
+#### a. Travel Package Map: Acts as a storage for travel packages, which could be an in-memory database substitute to keep track of all the travel package instances.
+#### b. Destination Map: Similar to the travel package map, it's a storage repository for all destinations, likely keyed by an identifier such as a name or ID.
+#### c. Activity Map: Maintains a repository of activities, ensuring that each activity is associated with one destination only.
+
+
+## 3. Models
+
+#### a. Travel Package: Represents travel packages and contains attributes such as name, capacity, destinations, and passengers.
+#### b. Destination: Represents a destination within a travel package and contains a list of activities available at that destination.
+#### c. Activity: Represents an activity with attributes like name, description, cost, and capacity.
+
+## 4. Passenger Types:
+
+#### a. Standard Passenger: A passenger type with a balance attribute, where the cost of activities is deducted from the balance.
+#### b. Gold Passenger: Similar to a standard passenger but receives a discount on activity costs.
+#### c. Premium Passenger: Can sign up for activities without any cost.
 
 ## Low Level Design ( UML Diagram )
 

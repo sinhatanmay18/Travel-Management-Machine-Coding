@@ -54,7 +54,7 @@ The system provides a robust platform where travel packages can be created and m
     2. Maven (for dependency management and building the project)
 
 ## Clone the Repository:
-    git clone https://github.com/yourusername/travel-management-system.git
+    https://github.com/sinhatanmay18/Travel-Management-Machine-Coding.git
 
 ## Build the Project
     mvn clean install
